@@ -1,8 +1,8 @@
-###These are the names of the contributors to this github repository
-    * Paul Mulatya  [Mulatya's github](https://github.com/paul-mulatya)
-    *  Nasir Nyamache [Nasir's github](https://github.com/nickfff-dev)
+### These are the names of the contributors to this github repository
+* **Paul Mulatya**  [Mulatya's github](https://github.com/paul-mulatya)
+* **Nasir Nyamache** [Nasir's github](https://github.com/nickfff-dev)
 
-##To contribute to this project 
+## To contribute to this project 
 1. clone repo  printf
 2. create a branch with your name git checkout -b yourname
 3. Make changes, commit and push to your branch git push origin yourname
