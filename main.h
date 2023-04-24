@@ -8,7 +8,7 @@
 
 /**
  * struct frmt - holds format and print funcion for type
- * @frmt_s: the format string
+ * @frmt: the format string
  * @frmt_f: pointer to the function that will print the type
  */
 

@@ -7,8 +7,7 @@
  * Return: an int y number of the printed chars
  */
 int getprintfunc(char frmt_spec, va_list args)
-{	
-	int x = 0;
+{	int x = 0;
 	int y = 0;
 
 	frmt_t frmt_d[] = {
