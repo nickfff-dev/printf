@@ -1,9 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
-#include <limits.h>
 #include <unistd.h>
 
 /**
@@ -12,13 +12,14 @@
  * @frmt_f: pointer to the function that will print the type
  */
 
-typedef struct format
+typedef struct frmt
 {
-	char *frmt_s;
-	int (*frmt_f)();
-} frmt_type;
+	char frmt;
+	int (*frmt_f)(va_list);
+} frmt_t;
 
 
+int getprintfunc(char frmt_spec, va_list args);
 int _printf(const char *format, ...);
 int _strlen(char *s);
 int _putchar(char *c);

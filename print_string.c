@@ -1,15 +1,14 @@
 #include "main.h"
 /**
-* printf_string - function that print a string.
+* print_string - function that print a string.
 * @val: argument.
 * Return:  an int which is the length of the string.
 */
 int print_string(va_list val)
 {
 	char *s = va_arg(val, char *);
-	int x, num;
+	int x, num = 0;
 
-	num = 0;
 	if (s == NULL)
 	{
 		s = "(null)";
@@ -20,8 +19,7 @@ int print_string(va_list val)
 	}
 	for (x = 0; str[x] != '\0' x++)
 	{
-		_putchar(s[x]);
-		num++;
+		num += _putchar(s[x]);
 	}
 	return (num);
 }
