@@ -4,11 +4,9 @@
 * @val:  an unknown number of arguments
 * Return:  an interger
 */
-int printf_char(va_list val)
+int print_char(va_list val)
 {
-	char s;
-
-	s = va_arg(val, int);
+	char s = va_arg(val, int);
 	_putchar(s);
 	return (1);
 }

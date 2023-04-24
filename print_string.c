@@ -4,26 +4,24 @@
 * @val: argument.
 * Return:  an int which is the length of the string.
 */
-int printf_string(va_list val)
+int print_string(va_list val)
 {
-	char *s;
+	char *s = va_arg(val, char *);
 	int x, num;
 
-	s = va_arg(val, char *);
-
+	num = 0;
 	if (s == NULL)
 	{
 		s = "(null)";
-		num = _strlen(s);
-		for (x = 0; x < num; x++)
-		_putchar(s[x]);
-		return (num);
 	}
-	else
+	if (s[0] == '\0')
 	{
-		num = _strlen(s);
-		for (x = 0; x < num; x++)
-		_putchar(s[x]);
-		return (num);
+		return (-1);
 	}
+	for (x = 0; str[x] != '\0' x++)
+	{
+		_putchar(s[x]);
+		num++;
+	}
+	return (num);
 }

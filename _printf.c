@@ -5,7 +5,7 @@
  * @format: mandatory arguments that specifies format
  * Return: an int len of the printed chars
  */
-int _printf(const char * const format, ...)
+int _printf(const char *format, ...)
 {
 	frmt_type frmt_d[] = {
 	{"%s", print_string},
