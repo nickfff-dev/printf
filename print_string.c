@@ -17,7 +17,7 @@ int print_string(va_list val)
 	{
 		return (-1);
 	}
-	for (x = 0; str[x] != '\0' x++)
+	for (x = 0; s[x] != '\0'; x++)
 	{
 		num += _putchar(s[x]);
 	}
