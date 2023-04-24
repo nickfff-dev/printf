@@ -12,7 +12,7 @@
  * @frmt_f: pointer to the function that will print the type
  */
 
-typedef struct frmt
+typedef struct format
 {
 	char *frmt_s;
 	int (*frmt_f)();
@@ -22,6 +22,6 @@ typedef struct frmt
 int _printf(const char *format, ...);
 int _strlen(char *s);
 int _putchar(char *c);
-int printf_string(va_list val);
-int printf_char(va_list val);
+int print_string(va_list val);
+int print_char(va_list val);
 #endif

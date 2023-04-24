@@ -5,11 +5,11 @@
  * @format: mandatory arguments that specifies format
  * Return: an int len of the printed chars
  */
-int _printf(const char *format, ...)
+int _printf(const char * const format, ...)
 {
 	frmt_type frmt_d[] = {
-	{"%s", printf_string},
-	{"%c", printf_char}
+	{"%s", print_string},
+	{"%c", print_char}
 	};
 	va_list args;
 	int x == 0;
