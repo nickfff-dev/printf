@@ -1,3 +1,4 @@
+#include "main.h"
 /**
 * _strlen - the function name
 * @s: parameter of type char *.
