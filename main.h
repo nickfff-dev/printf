@@ -18,12 +18,10 @@ typedef struct frmt
 	int (*frmt_f)(va_list);
 } frmt_t;
 
-
-int getprintfunc(char frmt_spec, va_list args);
+int _putchar(char c);
 int _printf(const char *format, ...);
-int _strlen(char *s);
-int _putchar(char *c);
 int print_string(va_list val);
 int print_char(va_list val);
+int getprintfunc(char frmt_spec, va_list args);
 
 #endif
