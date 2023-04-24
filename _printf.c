@@ -8,8 +8,8 @@
 int _printf(const char *format, ...)
 {
 	frmt_type frmt_d[] = {
-	{"%s", print_string},
-	{"%c", print_char}
+	{"%s", printf_string},
+	{"%c", printf_char}
 	};
 	va_list args;
 	int x == 0;
