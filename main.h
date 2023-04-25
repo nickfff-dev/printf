@@ -10,6 +10,8 @@
  * struct frmt - holds format and print function for type
  * @frmt: the format string
  * @frmt_f: pointer to the function that will print the type
+ *
+ *
  */
 
 typedef struct frmt
