@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* print_string - function that print a string.
-* @val: argument.
-* Return:  an int which is the length of the string.
+* print_string - function that print a string
+* @val: argument
+* Return:  an int which is the length of the string
 */
 int print_string(va_list val)
 {
