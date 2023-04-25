@@ -14,6 +14,8 @@ int getprintfunc(char frmt_spec, va_list args)
 	{'s', print_string},
 	{'c', print_char},
 	{'%', print_mod},
+	{'d', print_digit},
+	{'i', print_digit},
 	{0, NULL}
 	};
 
@@ -31,5 +33,4 @@ int getprintfunc(char frmt_spec, va_list args)
 		y += _putchar(frmt_spec);
 	}
 	return (y);
-
 	}
