@@ -27,9 +27,9 @@ int _printf(const char *format, ...)
 			}
 			l += getprintfunc(format[j + 1], val);
 			if (l == 0)
-				k += _putchar(format[j + 1]);
+			k += _putchar(format[j + 1]);
 			if (l == -1)
-				k = -1;
+			k = -1;
 			j++;
 		}
 		else
