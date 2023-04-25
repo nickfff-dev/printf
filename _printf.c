@@ -21,8 +21,8 @@ int _printf(const char *format, ...)
 		if (format[j] == '%')
 		{
 			if (!format[j + 1] || (format[j + 1] == ' ' && !format[j + 2]))
-				k = -1;
-				break;
+			k = -1;
+			break;
 			l += getprintfunc(format[j + 1], val);
 			if (l == 0)
 				k += _putchar(format[j + 1]);
