@@ -28,7 +28,9 @@ int _printf(const char *format, ...)
 			if (l == 0)
 			k += _putchar(format[j + 1]);
 			if (l == -1)
-			k = -1;
+			{
+				k = -1;
+			}
 			j++;
 		}
 		else
