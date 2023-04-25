@@ -7,7 +7,7 @@
 int print_string(va_list val)
 {
 	char *s = va_arg(val, char *);
-	int i;
+	int x;
 	int num = 0;
 
 	if (s == NULL)
