@@ -16,15 +16,11 @@ int _printf(const char *format, ...)
 	if (format[0] == '%' && format[1] == ' ' && !format[2])
 	return (-1);
 	while (format[j])
-	{
-		l = 0;
+	{	l = 0;
 		if (format[j] == '%')
-		{
-			if (!format[j + 1] || (format[j + 1] == ' ' && !format[j + 2]))
-			{
-				k = -1;
-				break;
-			}
+		{	if (!format[j + 1] || (format[j + 1] == ' ' && !format[j + 2]))
+			k = -1;
+			break;
 			l += getprintfunc(format[j + 1], val);
 			if (l == 0)
 			k += _putchar(format[j + 1]);
