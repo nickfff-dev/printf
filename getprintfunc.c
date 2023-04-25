@@ -13,7 +13,8 @@ int getprintfunc(char frmt_spec, va_list args)
 	frmt_t frmt_d[] = {
 	{'s', print_string},
 	{'c', print_char},
-	{'%', print_mod}
+	{'%', print_mod},
+	{0, NULL}
 	};
 
 	while (frmt_d[x].frmt)
