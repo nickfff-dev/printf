@@ -34,3 +34,4 @@ int getprintfunc(char frmt_spec, va_list args)
 	}
 	return (y);
 	}
+

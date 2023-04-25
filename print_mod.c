@@ -12,3 +12,4 @@ int print_mod(va_list val)
 	_putchar('%');
 	return (1);
 }
+

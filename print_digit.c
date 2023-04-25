@@ -34,3 +34,4 @@ int print_digit(va_list val)
 	}
 	return (i);
 }
+
