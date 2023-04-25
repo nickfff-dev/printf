@@ -18,10 +18,11 @@ typedef struct frmt
 	int (*frmt_f)(va_list);
 } frmt_t;
 
-
+/*prototypes*/
 int getprintfunc(char frmt_spec, va_list args);
 int _printf(const char *format, ...);
 int _putchar(char c);
+/*Conversion specifiers*/
 int print_string(va_list val);
 int print_char(va_list val);
 int print_mod(va_list val);
