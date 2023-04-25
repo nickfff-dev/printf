@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_char - function that prints a character.
+* print_char - function that prints a character
 * @val:  an unknown number of arguments
 * Return:  an interger
 */
