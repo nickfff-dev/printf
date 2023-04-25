@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-  * print_digit - the function name
-  * @val: parameter of type va_list .
-  * Return: int .
+ * print_digit - the function name
+ * @val: parameter of type va_list
+ * Return: int
  */
 int print_digit(va_list val)
 {
