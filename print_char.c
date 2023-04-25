@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* print_char - function that prints a character
-* @val:  an unknown number of arguments
-* Return:  an interger
+* print_char- function that prints a character
+* @val:an unknown number of arguments
+* Return: an interger
 */
 int print_char(va_list val)
 {
@@ -12,3 +12,4 @@ int print_char(va_list val)
 	_putchar(s);
 	return (1);
 }
+

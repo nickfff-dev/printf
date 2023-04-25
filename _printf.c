@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf -  a function that mimic  printf
+ * _printf - a function that mimic  printf
  * @format: the format specifier character
  * Return: the count of chars printed
  */
