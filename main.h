@@ -30,7 +30,6 @@ int print_string(va_list val);
 int print_char(va_list val);
 int print_mod(va_list val);
 int print_digit(va_list val);
-int print_unsigned(va_list val);
 int print_bina(va_list val);
 
 #endif
