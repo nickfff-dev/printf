@@ -38,7 +38,7 @@ int print_hex_lower(va_list args)
 		}
 		else
 		{
-			_putchar(list[x] + 87);
+			list[x] = list[x] + 39;
 		}
 		x--;
 	}
