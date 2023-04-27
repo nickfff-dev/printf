@@ -7,39 +7,32 @@
 */
 int print_hex_upper(va_list args)
 {
-	unsigned int num = va_arg(args, unsigned int);
-	int x = 0;
-	unsigned int div = 1;
-	unsigned int num_aux = num;
+	int x;
+	int *list;
+	int iter = 0;
+	unsigned int num1 = va_arg(args, unsigned int);
+	unsigned int num2 = num1;
 
-	while (num_aux > 15)
+	while (num1 / 16 != 0)
 	{
-		div *= 16;
-		num_aux /= 16;
+		num1 /= 16;
+		iter++;
 	}
-	while (div != 0)
+	iter++;
+	list = malloc(iter * sizeof(int));
+	for (x = 0; x < iter; x++)
 	{
-		if (num >= 16)
-		{
-			if ((num / div) < 10)
-			{
-				_putchar((num / div) + '0');
-				x++;
-			}
-			else
-			{
-				_putchar((num / div) + 55);
-				x++;
-			}
-			num %= div;
-			div /= 16;
-		}
-		else
-		{
-			_putchar(num + '0');
-			x++;
-			div = 0;
-		}
+		list[x] = num2 % 16;
+		num2 /= 16;
 	}
-	return (x);
+	for (x = iter - 1; x >= 0; x--)
+	{
+		if (list[x] > 9)
+		{
+			list[x] = list[x] + 7;
+		}
+		_putchar(list[x] + '0');
+	}
+	free(list);
+	return (iter);
 }
