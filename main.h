@@ -32,5 +32,8 @@ int print_mod(va_list val);
 int print_digit(va_list val);
 int print_unsigned(va_list val);
 int print_bina(va_list args);
+int print_hex_lower(va_list args);
+int print_oct(va_list args);
+int print_hex_upper(va_list args);
 
 #endif

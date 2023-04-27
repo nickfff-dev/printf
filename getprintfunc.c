@@ -18,6 +18,9 @@ int getprintfunc(char frmt_spec, va_list args)
 	{'i', print_digit},
 	{'u', print_unsigned},
 	{'b', print_bina},
+	{'x', print_hex_lower},
+	{'X', print_hex_upper},
+	{'o', print_oct},
 	{0, NULL}
 	};
 
