@@ -35,5 +35,6 @@ int print_bina(va_list args);
 int print_hex_lower(va_list args);
 int print_oct(va_list args);
 int print_hex_upper(va_list args);
-
+int print_pointer(va_list args);
+int print_hex_helper(unsigned long int num);
 #endif
