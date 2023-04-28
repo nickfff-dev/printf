@@ -22,7 +22,7 @@ int getprintfunc(char frmt_spec, va_list args)
 	{'X', print_hex_upper},
 	{'o', print_oct},
 	{'p', print_pointer},
-	{'\0', NULL}
+	{'0', NULL}
 	};
 
 	while (frmt_d[x].frmt)
